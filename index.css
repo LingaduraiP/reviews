@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+}
+body {
+  background: linear-gradient(60deg, rgb(209, 209, 237), rgb(194, 235, 234));
+}
+.container {
+  width: 90vh;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h2 {
+  font-size: 2rem;
+}
+.underline {
+  height: 3px;
+  width: 7rem;
+  background: rgb(47, 134, 206);
+  border-radius: 20px;
+}
+.review {
+  border: 3px solid rgb(47, 134, 206);
+  padding: 1rem 2rem;
+  height: 22rem;
+  width: 35rem;
+  margin: 2rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.image_container {
+  width: 4rem;
+  height: 4rem;
+  background: rgb(47, 134, 206);
+  position: relative;
+  border-radius: 50%;
+}
+.image_container::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  border-radius: 50%;
+  left: 2px;
+  width: 100%;
+  height: 100%;
+  background: rgb(47, 134, 206);
+}
+.image_container img {
+  position: relative;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* transform: translateY(-2rem); */
+}
+.image_container svg {
+  position: absolute;
+  font-size: 10px;
+  top: 0;
+  color: rgb(47, 134, 206);
+  left: 0;
+}
+.detail h4 {
+  text-transform: capitalize;
+  margin: 5px 0 0 0;
+}
+.detail h6 {
+  color: rgb(47, 134, 206);
+  transform: translateY(-5px);
+  font-size: 10px;
+}
+.detail p {
+  color: #383838;
+  font-size: 14px;
+  text-align: center;
+}
+
+.buttons {
+  margin: 0.5rem 0 0 0;
+}
+.back_btn {
+  background: none;
+  color: rgb(47, 134, 206);
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 1.4rem;
+}
+.next_btn {
+  background: none;
+  color: rgb(47, 134, 206);
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 1.4rem;
+}
+.back_btn:active {
+  font-size: 1rem;
+}
+.next_btn:active {
+  font-size: 1rem;
+}
+.surprice {
+  background: none;
+  text-transform: capitalize;
+  color: rgb(47, 134, 206);
+  height: 2rem;
+  width: 9rem;
+  font-size: 15px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.01),
+    -2px -2px 5px 5px rgba(0, 0, 0, 0.01);
+
+  border-radius: 10px;
+}
+.surprice:hover {
+  background: linear-gradient(60deg, rgb(209, 209, 237), rgb(194, 235, 234));
+}
+.surprice:active {
+  font-size: 12px;
+}
